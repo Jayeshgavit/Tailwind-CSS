@@ -1,13 +1,49 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors in tailwindcss</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline text-center">
-    Hello world!
+
+<body class="ml-4">
+  <h1 class="text-3xl font-bold text-center pt-3 ">
+    Working with Colors using tailwindcss
   </h1>
+  <br>
+  <h2 class="font-semibold">Normal Color - (text-red-500)</h2>
+  <div class="flex flex-wrap justify-start pt-3">
+    <div class="p-4 text-red-500">Red</div>
+    <div class="p-4 text-green-400">Green</div>
+    <div class="p-4 text-blue-500">Blue</div>
+    <div class="p-4 text-yellow-400">Yellow</div>
+    <div class="p-4 text-purple-400">Purple</div>
+  </div><br><hr>
+
+
+  <h2 class="font-semibold">Hover Color - (hover:text-red-500) shade upto 950 </h2><br>
+  <div class="flex justify-evenly">
+    <p class="hover:text-red-500">shade start 50 to range 950 </p>
+    <p class="hover:text-green-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quia!</p>
+    <p class="hover:text-blue-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, hic?</p>
+  </div><br><hr>
+
+
+  <h2 class="font-semibold">Background color - (bg-green-500) (note- white & black don't have range of shadding)</h2>
+  <div class="flex justify-evenly pt-5 text-white">
+    <div class="w-24 h-24 bg-black">div 1</div>
+    <div class="w-24 h-24 bg-green-500">div 1</div>
+    <div class="w-24 h-24 bg-yellow-400">div 1</div>
+    <div class="w-24 h-24 bg-purple-500">div 1</div>
+  </div>
+  <div class="flex justify-evenly pt-10 text-black">
+    <p class="bg-slate-400 ">Lorem ipsum dolor sit amet.</p>
+    <p class="bg-green-300 ">Lorem ipsum dolor sit amet.</p>
+    <p class="bg-red-300 ">Lorem ipsum dolor sit amet.</p>
+  </div>
+
 </body>
+
 </html>
